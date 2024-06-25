@@ -2640,7 +2640,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (min-width: 1024px) {
 
 			.image.fit {
 				margin: 2rem 0;
@@ -2648,6 +2648,46 @@ input, select, textarea {
 
 			.image.main {
 				margin: 2rem 0;
+				width: 100%;
+			}
+
+		}
+
+		@media screen and (min-width: 1280px) {
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+
+			.image.main {
+				margin: 2rem 0;
+				width: 90%;
+			}
+
+		}
+
+		@media screen and (min-width: 1920px) {
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+
+			.image.main {
+				margin: 2rem 0;
+				width: 42.5%;
+			}
+
+		}
+
+		@media screen and (min-width: 2560px) {
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+
+			.image.main {
+				margin: 2rem 0;
+				width: 30%;
 			}
 
 		}
