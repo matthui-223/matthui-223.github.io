@@ -2654,7 +2654,7 @@ input, select, textarea {
 					width: 100%;
 				}
 		
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 1024px) { /* 10" & 12" Notebook */
 
 			.image.fit {
 				margin: 2rem 0;
@@ -2662,12 +2662,12 @@ input, select, textarea {
 
 			.image.intro {
 				margin: 2rem 0;
-				width: 100%;
+				width: 80%;
 			}
 
 		}
 
-		@media screen and (min-width: 1280px) {
+		@media screen and (min-width: 1280px) { /* 13" Notebook */
 
 			.image.fit {
 				margin: 2rem 0;
@@ -2675,12 +2675,12 @@ input, select, textarea {
 
 			.image.intro {
 				margin: 2rem 0;
-				width: 90%;
+				width: 68%;
 			}
 
 		}
 
-		@media screen and (min-width: 1920px) {
+		@media screen and (min-width: 1366px) { /* 15" Notebook */
 
 			.image.fit {
 				margin: 2rem 0;
@@ -2688,7 +2688,59 @@ input, select, textarea {
 
 			.image.intro {
 				margin: 2rem 0;
-				width: 42.5%;
+				width: 56%;
+			}
+
+		}
+
+		@media screen and (min-width: 1440px) {  /* 19" Notebook */
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+
+			.image.intro {
+				margin: 2rem 0;
+				width: 70%;
+			}
+
+		}
+
+		@media screen and (min-width: 1600px) {  /* 20" Notebook */
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+
+			.image.intro {
+				margin: 2rem 0;
+				width: 60%;
+			}
+
+		}
+
+		@media screen and (min-width: 1920px) { /* 1080p Monitor */
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+
+			.image.intro {
+				margin: 2rem 0;
+				width: 57.5%;
+			}
+
+		}
+
+		@media screen and (min-width: 2048px) { /* 2K Monitor */
+
+			.image.fit {
+				margin: 2rem 0;
+			}
+
+			.image.intro {
+				margin: 2rem 0;
+				width: 52.5%;
 			}
 
 		}
