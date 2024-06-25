@@ -2639,14 +2639,28 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
-
+		
+		.image.intro {
+				display: block;
+				margin: 2.75rem 0;
+				width: 100%;
+			}
+	
+			.image.intro:first-child {
+					margin-top: 0;
+				}
+	
+			.image.intro img {
+					width: 100%;
+				}
+		
 		@media screen and (min-width: 1024px) {
 
 			.image.fit {
 				margin: 2rem 0;
 			}
 
-			.image.main {
+			.image.intro {
 				margin: 2rem 0;
 				width: 100%;
 			}
@@ -2659,7 +2673,7 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
-			.image.main {
+			.image.intro {
 				margin: 2rem 0;
 				width: 90%;
 			}
@@ -2672,7 +2686,7 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
-			.image.main {
+			.image.intro {
 				margin: 2rem 0;
 				width: 42.5%;
 			}
@@ -2685,12 +2699,13 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
-			.image.main {
+			.image.intro {
 				margin: 2rem 0;
-				width: 30%;
+				width: 32.5%;
 			}
 
 		}
+		
 
 	a.image {
 		overflow: hidden;
