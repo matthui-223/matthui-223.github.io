@@ -66,6 +66,59 @@ input, select, textarea {
 	appearance: none;
 }
 
+.image-grid {
+	--gap: 16px;
+	--num-col: 4;
+	--row-height: 250px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 70%;
+}
+
+.image-grid-col-1 {
+	grid-column: span 1;
+}
+
+.image-grid-row-1 {
+	grid-row: span 1;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+.image-grid-col-5 {
+	grid-column: span 5;
+}
+
+.image-grid-row-5 {
+	grid-row: span 3;
+}
+
+.image-grid-col-4 {
+	grid-column: span 4;
+}
+
+.image-grid-row-4 {
+	grid-row: span 4;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -316,6 +369,8 @@ input, select, textarea {
 		border-bottom-color: #eeeeee;
 	}
 
+
+
 /* Row */
 
 	.row {
@@ -323,6 +378,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		
 	}
 
 		.row > * {
@@ -558,8 +614,10 @@ input, select, textarea {
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 3rem;
 				}
-
-		@media screen and (max-width: 1680px) {
+		
+			
+		@media screen and (max-width: 1680px) 
+		{
 
 			.row {
 				display: flex;
@@ -2587,7 +2645,6 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
-
 		.image img {
 			display: block;
 		}
